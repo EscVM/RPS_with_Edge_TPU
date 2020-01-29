@@ -1,7 +1,7 @@
 <h1 align="center"> ~ Rock - Paper - Scissor on Edge TPUs ~ </h1>
 
 You know when you have some important stuff to do, but you try so hard to find excuses and other things to do to postpone everything? Today, 28/01/2020, it's one of those days :)) So, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/) that are in my office.  
-In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board, a Raspberry 4 with the USB Coral Accelerator (connected to USB 3 port) and Raspberry 3 with the USB Coral Accelerator (USB 2 port). Note that the results on the USB Accelerator ahve been achieved installing the [Edge TPU runtime with maximum operating frequency](https://coral.ai/docs/accelerator/get-started/#install-with-maximum-operating-frequency-optional).  
+In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board, a Raspberry 4 with the USB Coral Accelerator (connected to USB 3 port) and Raspberry 3 with the USB Coral Accelerator (USB 2 port). Note that the results on the USB Accelerator have been achieved installing the [Edge TPU runtime with maximum operating frequency](https://coral.ai/docs/accelerator/get-started/#install-with-maximum-operating-frequency-optional). The inference time is the mean value over 1000 predictions.
 These are my results:
 
 <table align="center">
@@ -16,14 +16,14 @@ These are my results:
     <td>747</td>
   </tr>
   <tr>
-    <td>Raspi 4 + USB Accelerator (USB 3.0)</td>
+    <td>Raspi 4 + USB Accelerator (USB 3)</td>
     <td>1.4</td>
     <td>710</td>
   </tr>
   <tr>
-    <td>Raspi 3 + USB Accelerator (USB 2.0)</td>
-    <td>1.9</td>
-    <td>538</td>
+    <td>Raspi 3 + USB Accelerator (USB 2)</td>
+    <td>5.0</td>
+    <td>200</td>
   </tr>
 </table>
 
@@ -48,7 +48,7 @@ Install on the hosting device to make the inference code work the following libr
 - [opencv-python](https://pypi.org/project/opencv-python/). **N.B.** We installed OpenCV4.0 on the Dev Board using [this](https://medium.com/@balaji_85683/installing-opencv-4-0-on-google-coral-dev-board-5c3a69d7f52f) guide as reference.
 - numpy
 - [TensorFlow Lite Interpreter](https://www.tensorflow.org/lite/guide/python). If you're using the Coral USB Accelerator with the Raspberry 3 B+ or 4 download ARM32.  
-**N.B.** If you are using the Dev Board the Interpreter and also the TFLite Converter are already installed.
+**N.B.** If you are using the Dev Board, both the Interpreter and the EdgeTPU Compiler are already installed during OS flashing.
 
 
 # 2.0 Run the Interpreter
