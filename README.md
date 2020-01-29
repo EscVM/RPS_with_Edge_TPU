@@ -1,7 +1,7 @@
 <h1 align="center"> ~ Rock - Paper - Scissor with Edge TPU ~ </h1>
 
 Today, 28/01/2020, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/).
-In order to check their performance, I trained a very simple and dumb CNN (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board and a Raspberry 3 B+ with the USB Coral Accelerator. 
+In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board and a Raspberry 3 B+ with the USB Coral Accelerator. 
 
 # 1.0 Getting Started
 
