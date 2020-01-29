@@ -46,8 +46,8 @@ Python3 is required. I used TensorFlow 2.x for the training, but I uploaded also
 Install on the hosting device to make the inference code work the following libraries:
 
 - [opencv-python](https://pypi.org/project/opencv-python/). **N.B.** We installed OpenCV4.0 on the Dev Board using [this](https://medium.com/@balaji_85683/installing-opencv-4-0-on-google-coral-dev-board-5c3a69d7f52f) guide as reference.
-- numpy
-- [TensorFlow Lite Interpreter](https://www.tensorflow.org/lite/guide/python). If you're using the Coral USB Accelerator with the Raspberry 3 B+ or 4 download ARM32.  
+- [numpy](https://pypi.org/project/numpy/)
+- [TensorFlow Lite Interpreter](https://www.tensorflow.org/lite/guide/python). If you're using the Coral USB Accelerator with the Raspberry download ARM32.  
 **N.B.** If you are using the Dev Board, both the Interpreter and the EdgeTPU Compiler are already installed during OS flashing.
 
 
