@@ -1,7 +1,8 @@
 <h1 align="center"> ~ Rock - Paper - Scissor on Edge TPUs ~ </h1>
 
-You know when you have some important stuff to do, but you try so hard to find excuses and other things to do to postpone everything? Today, 28/01/2020, it's one of those days :)) So, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/) that are in my office.
-In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board, a Raspberry 4 with the USB Coral Accelerator (connected to USB 3 port) and Raspberry 3 with the USB Coral Accelerator (USB 2 port). Note that the results on the USB Accelerator ahve been achieved installing the [Edge TPU runtime with maximum operating frequency](https://coral.ai/docs/accelerator/get-started/#install-with-maximum-operating-frequency-optional). These are my results:
+You know when you have some important stuff to do, but you try so hard to find excuses and other things to do to postpone everything? Today, 28/01/2020, it's one of those days :)) So, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/) that are in my office.  
+In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board, a Raspberry 4 with the USB Coral Accelerator (connected to USB 3 port) and Raspberry 3 with the USB Coral Accelerator (USB 2 port). Note that the results on the USB Accelerator ahve been achieved installing the [Edge TPU runtime with maximum operating frequency](https://coral.ai/docs/accelerator/get-started/#install-with-maximum-operating-frequency-optional).  
+These are my results:
 
 <table align="center">
   <tr>
