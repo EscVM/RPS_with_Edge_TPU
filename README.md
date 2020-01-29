@@ -1,7 +1,30 @@
 <h1 align="center"> ~ Rock - Paper - Scissor on Edge TPUs ~ </h1>
 
-Today, 28/01/2020, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/).
-In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board and a Raspberry 3 B+ with the USB Coral Accelerator. 
+You know when you have some important stuff to do, but you try so hard to find excuses and other things to do to postpone everything? Today, 28/01/2020, it's one of those days :)) So, I really wanted to loose some time and explore a little bit these new edge AI devices made by [Google](https://coral.ai/) that are in my office.
+In order to check their performance, I trained a very simple and dumb [CNN](https://github.com/EscVM/RPS_with_Edge_TPU/blob/master/media/baby_cnn_arch.png) (feel free to improve it) on the [Rock-Paper-Scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors) dataset and I made it run on a Coral Dev Board and a Raspberry 4 with the USB Coral Accelerator. These are my results:
+
+<table align="center">
+  <tr>
+    <th><span style="font-weight:bold">Device</span></th>
+    <th><span style="font-weight:bold">Inference Time [ms]</span></th>
+    <th><span style="font-weight:bold">FPS</span></th>
+  </tr>
+  <tr>
+    <td>Coral Dev Board</td>
+    <td>1.3</td>
+    <td>747</td>
+  </tr>
+  <tr>
+    <td>Rasp 4 + USB Accelerator</td>
+    <td>1.5</td>
+    <td>689</td>
+  </tr>
+</table>
+
+
+![Flow_chart of the recognition proces](media/coral_devices.jpg)
+
+**Side Note** [fsalv](https://github.com/fsalv) will be or is (depending on when you are reading) a contributor of this repository. He wants to improve it and make it ukulele friendly.
 
 # 1.0 Getting Started
 
@@ -30,6 +53,10 @@ Open your terminal in the project folder and launch:
    ```
    
 Enjoy the network predicting the shape of your beautifull hands :)
+
+<p align="center">
+  <img width="640" height="480" src="media/rpc_record.gif">
+</p>
 
 # 3.0 Improve the CNN Network 
 
