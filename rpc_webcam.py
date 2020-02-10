@@ -2,10 +2,17 @@
 import tflite_runtime.interpreter as tflite
 import numpy as np
 import cv2
+import platform
 
 
 #----- Data and initializations
 model_path = "./bin/rps_edgetpu.tflite"
+
+EDGETPU_SHARED_LIB = {
+  'Linux': 'libedgetpu.so.1',
+  'Darwin': 'libedgetpu.1.dylib',
+  'Windows': 'edgetpu.dll'
+}[platform.system()]
 
 classes = ['Paper', 'Rock', 'Scissor']
 classes_dic ={'Papaer': 0, 'Rock': 0, 'Scissor': 0}
@@ -15,7 +22,7 @@ input_size = 150
 
 # initialize interpreter
 interpreter = tflite.Interpreter(model_path,
-    experimental_delegates=[tflite.load_delegate('libedgetpu.so.1')])
+    experimental_delegates=[tflite.load_delegate(EDGETPU_SHARED_LIB)])
 interpreter.allocate_tensors()
 
 # initialize camera and opencv variables
