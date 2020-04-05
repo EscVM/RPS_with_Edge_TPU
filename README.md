@@ -43,7 +43,7 @@ Python3 is required. I used TensorFlow 2.x for the training, but I uploaded also
 
 ## 1.1 Installations for the hosting device
 
-Install on the hosting device to make the inference code work the following libraries:
+Install on the hosting device the following libraries to make the inference code work :
 
 - [opencv-python](https://pypi.org/project/opencv-python/). **N.B.** We installed OpenCV4.0 on the Dev Board using [this](https://medium.com/@balaji_85683/installing-opencv-4-0-on-google-coral-dev-board-5c3a69d7f52f) guide as reference.
 - [numpy](https://pypi.org/project/numpy/)
