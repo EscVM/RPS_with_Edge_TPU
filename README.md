@@ -55,7 +55,7 @@ Install on the hosting device the following libraries to make the inference code
 Open your terminal in the project folder and launch:
 
    ```bash
-   python3 rpc_webcame.py
+   python3 rpc_webcam.py
    ```
    
 Enjoy the network predicting the shape of your beautifull hands :)
